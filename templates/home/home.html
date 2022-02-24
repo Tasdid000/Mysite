@@ -1,0 +1,366 @@
+{% extends 'basic.html' %}
+
+
+{% block title %} Home {% endblock title %}
+{% block body %}
+{% load static %}
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" rel="stylesheet">
+    <style>
+        .button-24 {
+            background: #5755e1;
+            border: 2px solid #854fee;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            min-height: 40px;
+            width: 150px;
+            outline: 0;
+            padding: 16px 24px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        .button-24:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        }
+
+        .button-24:hover,
+        .button-24:active {
+            background-color: initial;
+            background-position: 0 0;
+            color: #222;
+        }
+
+        .button-24:active {
+            opacity: .5;
+        }
+
+        .button-25 {
+            background: #5755e1;
+            border: 2px solid #854fee;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            min-height: 40px;
+            width: 150px;
+            outline: 0;
+            padding: 16px 24px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        .button-25:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        }
+
+        .button-25:hover,
+        .button-25:active {
+            background-color: initial;
+            background-position: 0 0;
+            color: #222;
+        }
+
+        .button-25:active {
+            opacity: .5;
+        }
+
+
+        .button-22 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #854fee;
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            margin: 0;
+            min-height: 40px;
+            width: 150px;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+
+            will-change: transform;
+        }
+
+        .button-22:disabled {
+            pointer-events: none;
+        }
+
+        .button-22:hover {
+            color: #fff;
+            background-color: #5755e1;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-22:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .button-23 {
+            background: #5755e1;
+            border: 2px solid #854fee;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            min-height: 40px;
+            width: 200px;
+            outline: 0;
+            padding: 16px 24px;
+            text-align: center;
+            text-rendering: geometricprecision;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        .button-23:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        }
+
+        .button-23:hover,
+        .button-23:active {
+            background-color: initial;
+            background-position: 0 0;
+            color: #222;
+        }
+
+        .button-23:active {
+            opacity: .5;
+        }
+    </style>
+</head>
+<br><br><br>
+
+<body>
+
+    <div class="container">
+        <div align="center">
+            <img src="{% static "/img/10.png"%}"
+            style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } .circular--landscape img { width: auto; height: 100%; margin-left: -50px;">
+        </div> 
+        <br>
+        <br>                           
+        <div align="center">
+            <div class="banner_content">
+            <h3 class="text-uppercase"><b>Hell0</b></h3>
+            <h1 class="text-uppercase"><b>I am tasdid hasnain</b></h1>
+            <h5 class="text-uppercase"><b>web and flutter developer </b></h5>
+                                       
+                           
+            <button class="button-24" role="button" style="margin-right: 20px">Hire Me</button>
+
+            <button class="button-22" role="button" style="margin-right: 20px">GET CV</button>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="about">
+            <div class="container">
+                <div class="row justify-content-start align-items-center">
+                    <div class="col-lg-5">
+                        <div class="about_img">
+                            <img class="" src="{% static "/img/4.png"%}" height="450" width="450">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="main_title text-left">
+                            <h1><b>let’s <br>
+                                    Introduce about <br>
+                                    myself</b></h1>
+                            <h5>
+                                Hi I'm Tasdid Hasnain Siam. I'm a Web Developer and also a Flutter Developer.
+                                I can build attractive website and mobile app for you.
+                            </h5>
+                            <br><br>
+                            <a class="primary_btn" href="#"><button class="button-23" role="button"
+                                    style="margin-right: 20px">DOWENLOAD CV</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="features_area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="main_title">
+                            <h1><b>Skills</b></h1>
+                            <p>
+                                Is give may shall likeness made yielding spirit a itself togeth created
+                                after sea <br> is in beast beginning signs open god you're gathering ithe
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="row feature_inner">
+                    <div class="col-lg-4 col-md-6" style="margin-top: auto;">
+                        <div class="feature_item">
+                            <img src="{% static "/img/5.png"%}">
+                            <h4>Web developing</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" style="margin-top: auto;">
+                        <div class="feature_item">
+                            <img src="{% static "/img/6.png"%}" alt="">
+                            <h4>Web design</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature_item">
+                            <img src="{% static "/img/8.png"%}" height="70" width="150" style="margin-top: auto;">
+                            <h4>Mobile app developing</h4>
+                            <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--
+        <section class="features_area">
+            <div class="container">
+                <h1 class="text-uppercase">
+                    <b>
+                        quality work
+                    </b>
+                </h1>
+                <h1 class="text-uppercase">
+                    <b>
+                        my portfolios
+                    </b>
+                </h1>
+
+            </div>
+        </section> -->
+        <section class="features_area">
+            <h2 align="center">CONTACT ME </h2>
+            <div class="container align-center">
+                <div class="row justify-content-start align-items-center">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="https://img.icons8.com/nolan/64/phone.png" height="30" width="30"
+                                style="margin-right: 20px">
+                            <b>+8801709882474</b>
+                            <P align="center">Mon to Fri 9am to 6 pm</P>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/color-glass/48/000000/filled-sent.png" height="30"
+                                width="30" style="margin-right: 20px">
+                            <b>support@tasdid.com</b>
+                            <p align="center">Send us your query anytime!</P>
+                        </div>
+
+                    </div>
+                    <div class="offset-lg-2 col-lg-6">
+                        <form action="/contact" method="post" style="width: 700px">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class="form-label" for="name"></label>
+                                <input _ngcontent-serverapp-c31=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid" id="name" name="name"
+                                    ngmodel="" placeholder="Enter your Name" required="" type="name">
+                            </div>
+                            <br>
+                            <div class="form-group>
+                            <label for=" email" class="form-label"></label>
+                                <input _ngcontent-serverapp-c31=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid" id="email" name="email"
+                                    ngmodel="" placeholder="Enter your Email" required="" type="email">
+                                <small class="form-text" id="emailHelp"></small>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone"></label>
+                                <input _ngcontent-serverapp-c31=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid" id="phone" maxlength="10"
+                                    minlength="10" name="phone" ngmodel="" placeholder="Enter your Phone Number"
+                                    required="" type="number">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="content">
+                                </label>
+                                <textarea _ngcontent-serverapp-c31=""
+                                    class="form-control ng-untouched ng-pristine ng-invalid" id="message" name="content"
+                                    ngmodel="" placeholder="Your message" required="" type="text"></textarea>
+                            </div>
+
+                            <br>
+
+                            <a class="primary_btn" href="#"><button class="button-23" role="button"
+                                    style="margin-right: 20px">SEND MESSAGE</button></a>
+                        </form>
+                    </div>
+
+                </div>
+                </dev>
+        </section>
+    </div>
+</body>
+
+</html>
+
+{% endblock body %}
