@@ -26,7 +26,3 @@ def contact(request):
             messages.success(request, "Your message has been successfully sent")
 
     return render(request, "home/home.html")
-
-def join(request):
-    return render(request, "home/join.html")
-
