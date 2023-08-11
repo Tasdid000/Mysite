@@ -1,0 +1,90 @@
+{% extends 'basic.html' %}
+{% block title %} Contact {% endblock title %}
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'contact.css ' %}">
+</head>
+
+<body>
+    <div class="container my-3">
+        <div class="Contact__background">
+            <div class="">
+                <div class="">
+                    <p class="Contacttext">Contact<span class="Contactme">
+                            Me<i class="uil uil-dice-one"></i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe class="mapstyle"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57903.1302605022!2d91.81978193387744!3d24.899835747657022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1686205606400!5m2!1sen!2sbd"
+                width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="row justify-content-start align-items-center">
+            <div class="offset-lg-1 col-lg-4">
+                <div class="Contact_img">
+                    <p class="margin">
+                        <i class="uil uil-at"></i><a href="mailto: tasdidhasnain@gmail.com" class="email">
+                            tasdidhasnain@gmail.com
+                        </a>
+                    </p>
+                    <p class="phone">
+                        <i class="uil uil-phone-alt"></i><a href="tel:+8801709882474" class="email">
+                            01709882474
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-5">
+                <form action="/contact" method="post" style="width: auto;">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label class="form-label" for="name"></label>
+                        <input _ngcontent-serverapp-c31="" class="form-control ng-untouched ng-pristine ng-invalid"
+                            id="name" name="name" ngmodel="" placeholder="Enter your Name" required="" type="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email"></label>
+                        <input _ngcontent-serverapp-c31="" class="form-control ng-untouched ng-pristine ng-invalid"
+                            id="email" name="email" ngmodel="" placeholder="Enter your Email" required="" type="email">
+                        <small class="form-text" id="emailHelp"></small>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone"></label>
+                        <input _ngcontent-serverapp-c31="" class="form-control ng-untouched ng-pristine ng-invalid"
+                            id="phone" maxlength="10" minlength="10" name="phone" ngmodel=""
+                            placeholder="Enter your Phone Number" required="" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="content">
+                        </label>
+                        <textarea _ngcontent-serverapp-c31="" class="form-control ng-untouched ng-pristine ng-invalid"
+                            id="message" name="content" ngmodel="" placeholder="Your message" required=""
+                            type="text"></textarea>
+                    </div>
+
+                    <br>
+
+                    <a class="primary_btn" href="#"><button class="button-23" role="button"
+                            style="margin-right: 20px">SEND
+                            MESSAGE</button></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+{% endblock body %}

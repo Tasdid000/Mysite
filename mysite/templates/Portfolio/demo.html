@@ -1,0 +1,53 @@
+{% extends 'basic.html' %}
+{% block title %} Portfolio {% endblock title %}
+
+
+{% block js %}
+<script>
+    let previews = document.getElementsByClassName('preview');
+    Array.from(previews).forEach((element) => {
+        element.innerHTML = element.innerText;
+    })
+</script>
+{% endblock js %}
+{% block body %}
+{% load static %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'Portfolio.css ' %}">
+</head>
+
+<body>
+    
+    <div class="container my-3">
+        {% for post in allposts %}
+        <div class="container my-3">
+            <div class="gallery-image">
+                <div class="img-box">
+                    <img src="/media/{{post.image}}" alt="" class="img-fluid">
+                    <div class="transparent-box">
+                        <div class="caption">
+                            <p>{{post.title}}</p>
+                            {% comment %} <p class="opacity-low">Architect Design</p> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+    {% endblock body %}
+
+    {% comment %} <a _ngcontent-serverapp-c7="" class="" href="/portfolio/{{post.slug}}"><img
+            src="/media/{{post.image}}" alt="" class="img-fluid">
+    </a> {% endcomment %}
+</body>
+
+</html>

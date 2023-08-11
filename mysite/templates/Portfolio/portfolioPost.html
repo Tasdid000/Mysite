@@ -1,0 +1,12 @@
+{% extends 'basic.html' %}
+{% block title %}Portfolio{% endblock title %}
+{% block body %}
+<div class="container my-3">
+    <h2 class="blog-post-title">{{post.title}}</h2>
+    <img src="{{post.image}}" alt="" class="img-fluid">
+
+    <p>{{post.content |safe}}</p>
+
+    <hr>
+</div>
+{% endblock body %}

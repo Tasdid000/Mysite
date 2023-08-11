@@ -1,0 +1,397 @@
+{% extends 'basic.html' %}
+{% block title %} About Me {% endblock title %}
+{% block body %}
+{% load static %}
+{% load static tailwind_tags %}
+{% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'about.css'%}">
+</head>
+
+<body>
+    <div class="aboutpage">
+        <div class="about__background">
+            <div class="container my-3">
+                <div class="">
+                    <p class="abouttext">About<span class="aboutme">
+                            Me<i class="uil uil-dice-one"></i>
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <div class="detailss">
+            <div class="row justify-content-start align-items-center">
+                <div class="offset-lg-1 col-lg-4">
+                    <div>
+                        <img class="image" src="{% static '/img/10.png' %}" />
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-5">
+                    <div>
+                        <p class="me">
+                            About Me
+                        </p>
+                        <p class="personal">
+                            Personal Details
+                        </p>
+                        <p class="myself">
+                            I'm Tasdid Hasanain, and I have 2 years of experience in web development, specializing in
+                            Django and React.js. I am passionate about creating efficient and user-friendly web
+                            applications that leverage the power of these frameworks. With a strong background in both
+                            backend and frontend development, I have gained expertise in building scalable server-side
+                            applications with Django and dynamic user interfaces using React.js. I am a detail-oriented
+                            problem solver who enjoys staying up-to-date with the latest technologies and industry best
+                            practices. I am eager to contribute my skills and continue growing as a developer in
+                            meaningful projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skils">
+            <p class="skill">
+                Skills
+            </p>
+            <p class="technical">
+                my technical level
+            </p>
+            <div class="row justify-content-start align-items-center">
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="container my-3">
+                        <p>
+                            <i class="uil uil-brackets-curly"></i>
+                            <span class="frontend">Frontend Developer</span>
+                        </p>
+                        <div class="wrapper">
+                            <div class="">
+                                <div class="skills">
+                                    <div class="details">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div id="html-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>CSS</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="css-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>JavaScripts</span>
+                                    <span>62%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="javascript-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>React</span>
+                                    <span>72%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="React-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg- col-lg-5">
+                    <div class="container my-3">
+                        <p>
+                            <i class="uil uil-server"></i>
+                            <span class="frontend">Backend Developer</span>
+                        </p>
+                        <div class="wrapper">
+                            <div class="">
+                                <div class="skills">
+                                    <div class="details">
+                                        <span>Python</span>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div id="python-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>Django</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="django-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>Django REST framework</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="drf-bar"></div>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="details">
+                                    <span>MySQL</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bar">
+                                    <div id="MySQL-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-start align-items-center">
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="container my-3">
+                        <p>
+                            <i class="uil uil-tape"></i>
+                            <span class="frontend">Others</span>
+                        </p>
+                        <div class="wrapper">
+                            <div class="">
+                                <div class="skills">
+                                    <div class="details">
+                                        <span>Wordpress</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="bar">
+                                        <div id="wordpress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-3">
+            <p class="language">
+                Languages
+            </p>
+            <p class="language1">
+                Languages I Speak
+            </p>
+            <div class="row justify-content-start align-items-center">
+                <div class="offset-lg-2 col-lg-3">
+                    <div class="grid">
+                        <section>
+                            <h2 class="language2">Bangla</h2>
+                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none"
+                                    cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                <circle class="circle-chart__circle" stroke="#6c55e0" stroke-width="2"
+                                    stroke-dasharray="100,100" stroke-linecap="round" fill="none" cx="16.91549431"
+                                    cy="16.91549431" r="15.91549431" />
+                                <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5"
+                                        alignment-baseline="central" text-anchor="middle" font-size="8">100%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5"
+                                        alignment-baseline="central" text-anchor="middle" font-size="2">Yay 100%
+                                        progress!</text>
+                                </g>
+                            </svg>
+                        </section>
+                    </div>
+                </div>
+                <div class="offset-lg-2 col-lg-5">
+                    <div class="grid">
+                        <section>
+                            <h2 class="language2">English</h2>
+                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
+                                align="center" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none"
+                                    cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                <circle class="circle-chart__circle" stroke="#6c55e0" stroke-width="2"
+                                    stroke-dasharray="62,100" stroke-linecap="round" fill="none" cx="16.91549431"
+                                    cy="16.91549431" r="15.91549431" />
+                                <g class="circle-chart__info">
+                                    <text class="circle-chart__percent" x="16.91549431" y="15.5"
+                                        alignment-baseline="central" text-anchor="middle" font-size="8">62%</text>
+                                    <text class="circle-chart__subline" x="16.91549431" y="20.5"
+                                        alignment-baseline="central" text-anchor="middle" font-size="2">Yay 62%
+                                        progress!</text>
+                                </g>
+                            </svg>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qualifications container my-3">
+            <p class="qualification">
+                My Qualifications
+            </p>
+            <p class="Who">
+                A Comprehensive Overview of My Expertise and Education.
+            </p>
+            <div class="row justify-content-start align-items-center">
+                <div class="offset-lg-1 col-lg-5">
+                    <div>
+                        <p class="edu">
+                            Education
+                        </p>
+                        <div class="container">
+                            <p class="cse">B.sc. in Computer Science Engineering</p>
+                            <p class="Session"><span class="Session1">Session:</span> 2020-2023</p>
+                            <p class="Session"><span class="Session1">Status:</span> Present</p>
+                        </div>
+                        <div class="container">
+                            <p class="cse">B.sc. in Computer Science Engineering</p>
+                            <p class="Session"><span class="Session1">Session:</span> 2020-2023</p>
+                            <p class="Session"><span class="Session1">Status:</span> Present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-5">
+                    <div>
+                        <p class="edu">
+                            Work Experience
+                        </p>
+                        <div class="container">
+                            <p class="cse">WebHaxe</p>
+                            <p class="Session_2">Junior Web Application Developer</p>
+                            <p class="Session"><span class="Session1">Session:</span> July 2022 to Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="certificate container my-3">
+            <p class="qualification">
+                My Certificates
+            </p>
+            <div class="row">
+                {% for post in allposts %}
+                <div class="col-md-4">
+                    <div class="certificate">
+                        <div class="certificate-body">
+                            <div class="category-image">
+                                <img src="/media/{{post.certificate}}" alt="certificate" class="img-fluid">
+                                <div class="transparent-box">
+                                    <div class="caption">
+                                        <a _ngcontent-serverapp-c7="" class="" href="/portfolio/{{post.slug}}">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="feedback container my-3">
+            <p class="qualification">
+                Client’s Feedback About Me
+            </p>
+            <p class="Who">
+                Some Valuable Testimonial of My Work.
+            </p>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <q>I am extremely pleased with the outcome of the web development project. The website's design is
+                        visually stunning and user-friendly, providing an excellent browsing experience. The development
+                        team was highly professional, delivering the project ahead of schedule and exceeding my
+                        expectations.</q>
+                    <p class="author">- John Keats</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>I am thrilled with the results of the web development project. The website's functionality and
+                        performance are top-notch, and it perfectly aligns with our brand identity. The developer
+                        showcased his expertise by seamlessly integrating complex features and delivering a polished
+                        final product.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>I am beyond impressed with the web development project executed by him. The website's responsive
+                        design and intuitive interface have significantly improved user engagement. The developer
+                        attention to detail and timely delivery have made this collaboration a resounding success.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!-- <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 class="text-center text-3xl font-bold leading-8 text">Client's</h2>
+                <div
+                    class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    <img class="col-span-3 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
+                    <img class="col-span-3 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform">
+                    <img class="col-span-3 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple">
+                    <img class="col-span-3 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                        src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal">
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
+{% endblock body %}

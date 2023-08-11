@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.textname {
+    font-size: 40px;
+    font-weight: 600;
+    color: #6c55e0;
+    margin-bottom: 5%;
+}
+
+.textweb {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.myself {
+    color: black;
+}
+
+.section {
+    padding: 2rem 0 4rem;
+}
+
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.background {
+    color: white;
+    width: 100%;
+}
+
+.home_img {
+    padding: 30px 30px 30px 18px;
+}
+
+.home__blob {
+    width: 300px;
+    fill: #6c55e0;
+}
+
+.home__blob-img {
+    width: 170px;
+}
+
+.background {
+    padding-top: 5%;
+}
+
+.home_social-icon {
+    color: #6c55e0;
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 12px;
+    animation: bounce 5s ease infinite alternate;
+
+}
+
+.home_social-icon:hover {
+    color: black;
+}
+
+.icon {
+    margin-top: 10%;
+}
+
+.button-23 {
+    background: #5755e1;
+    border: 2px solid #854fee;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    min-height: 40px;
+    width: 200px;
+    outline: 0;
+    padding: 16px 24px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.button-23:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.button-23:hover,
+.button-23:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #222;
+}
+
+.button-23:active {
+    opacity: .5;
+}
+
+.button {
+    margin-top: 10%;
+}
+
+.about {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.intro {
+    color: rgb(148, 145, 145);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.about__img {
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.about_img {
+    padding: 30px 30px 30px 8px;
+}
+
+.about__blob {
+    width: 320px;
+    fill: #6c55e0;
+}
+
+.about__blob-img {
+    width: 300px;
+}
+
+.portfolio {
+    margin-top: 15%;
+}
+
+.work {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.detailss {
+    margin-top: 10%;
+}
+
+.footer {
+    background-color: #6c55e0;
+    height: fit-content;
+    margin-top: 10%;
+}
+
+.footertext {
+    text-align: center;
+    padding-top: 5%;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+.uil {
+    font-size: 20px;
+}
+
+.follow {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-brand {
+    color: #6c55e0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #5755e1;
+}
+
+.link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 30;
+}
+
+.link:hover {
+    color: #6c55e0;
+}
+
+.Services {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.fa-solid{
+    color: #6c55e0;
+    font-size: 30px;
+}
+.web{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 30px;
+    text-align: center;
+}
+.webtext{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-body img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.category-image {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.category-image:hover img {
+    transform: scale(1.1);
+}
+
+.category-image:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-image:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.category-image:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+.card{
+    border: none;
+}
+.posttitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.posttitle:hover{
+    color: white;
+}
+.certificate-body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate-body img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.category-image {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.category-image:hover img {
+    transform: scale(1.1);
+}
+
+.category-image:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-image:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.category-image:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+.certificate{
+    border: none;
+}
+.qualification {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 10%;
+}

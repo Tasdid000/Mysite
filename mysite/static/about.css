@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.abouttext {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.aboutme {
+    color: #6c55e0;
+}
+
+.uil {
+    font-size: 20px;
+    font-weight: 900;
+    color: #6c55e0;
+}
+
+.personal {
+    font-size: 35px;
+    font-weight: 500;
+    color: #6c55e0;
+}
+
+.me {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+}
+
+.myself {
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+.image {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.aboutpage {
+    overflow-x: hidden;
+}
+
+.detailss {
+    padding: 5%;
+}
+
+.skill {
+    text-align: center;
+    font-size: 35px;
+    color: #6c55e0;
+    margin-top: 5%;
+    font-weight: 600;
+}
+
+.technical {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    text-transform: capitalize;
+    margin-bottom: 5%;
+}
+
+.levels {
+    font-size: 20px;
+}
+
+.frontend {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6c55e0;
+}
+
+.wrapper {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    margin-top: 5%;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.bar {
+    position: relative;
+    border: 1px solid #6c55e0;
+    border-radius: 20px;
+
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #6c55e0;
+
+
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#javascript-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 62%;
+    }
+}
+
+#jQuery-bar {
+    animation: jQuery-fill 2s forwards;
+}
+
+@keyframes jQuery-fill {
+    100% {
+        width: 58%;
+    }
+}
+
+#React-bar {
+    animation: React-fill 2s forwards;
+}
+
+@keyframes React-fill {
+    100% {
+        width: 72%;
+    }
+}
+
+#python-bar {
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+#django-bar {
+    animation: django-fill 2s forwards;
+}
+
+@keyframes django-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#drf-bar {
+    animation: drf-fill 2s forwards;
+}
+
+@keyframes drf-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#MySQL-bar {
+    animation: MySQL-fill 2s forwards;
+}
+
+@keyframes MySQL-fill {
+    100% {
+        width: 72%;
+    }
+}
+
+#wordpress-bar {
+    animation: wordpress-fill 2s forwards;
+}
+
+@keyframes wordpress-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+.qualification {
+    text-align: center;
+    color: #6c55e0;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 10%;
+}
+
+.Who {
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+
+.edu {
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #6c55e0;
+    text-align: center;
+}
+
+.cse {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.Session {
+    font-size: 15px;
+    text-align: center;
+}
+
+.Session1 {
+    font-weight: 500;
+}
+
+.Session_2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #6c55e0;
+    color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: normal;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: #6c55e0;
+    margin-top: 15px;
+}
+
+.text {
+    color: #6c55e0;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+.language {
+    text-align: center;
+    font-size: 35px;
+    color: #6c55e0;
+    margin-top: 5%;
+    font-weight: 600;
+}
+
+.language1 {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.circle-chart__circle {
+    animation: circle-chart-fill 2s reverse;
+    /* 1 */
+    transform: rotate(-90deg);
+    /* 2, 3 */
+    transform-origin: center;
+    /* 4 */
+}
+
+.circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+    to {
+        stroke-dasharray: 0 20;
+    }
+}
+
+@keyframes circle-chart-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 31em) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.language2{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20%;
+    font-weight: 600;
+}
+.circle-chart{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.certificate-body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate-body img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.category-image {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.category-image:hover img {
+    transform: scale(1.1);
+}
+
+.category-image:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-image:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.category-image:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+.certificate{
+    border: none;
+}

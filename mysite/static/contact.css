@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+.contactinfo{
+    font-size: 30px;
+    font-weight: 600;
+}
+.form-control{
+    border-radius: 5px;
+    border-color:rgb(194, 191, 191);
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.Contacttext {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Contactme {
+    color: #6c55e0;
+}
+
+.uil {
+    font-size: 30px;
+    font-weight: 900;
+    color: #6c55e0;
+}
+.email{
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+.email:hover{
+    color: black;
+}
+.margin{
+    margin-bottom: 10%;
+}
+.phone{
+    margin-bottom: 30%;
+}
+.mapstyle{
+    border-radius: 10px;
+}
+.map{
+    padding: 10px;
+    margin-bottom: 10%;
+}

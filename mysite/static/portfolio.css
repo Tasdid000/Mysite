@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Portfoliotext {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Portfoliome {
+    color: #6c55e0;
+}
+
+.uil {
+    font-size: 30px;
+    font-weight: 900;
+    color: #6c55e0;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-body img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.category-image {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.category-image:hover img {
+    transform: scale(1.1);
+}
+
+.category-image:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-image:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.category-image:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+.card{
+    border: none;
+}
+.posttitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.posttitle:hover{
+    color: white;
+}

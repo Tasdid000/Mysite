@@ -1,0 +1,77 @@
+{% extends 'basic.html' %}
+{% block js %}
+<script>
+    let previews = document.getElementsByClassName('preview');
+    Array.from(previews).forEach((element) => {
+        element.innerHTML = element.innerText;
+    })
+</script>
+{% endblock js %}
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'portfolio.css ' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Portfolio">
+                    <div class="Portfolio__background">
+                        <div class="container my-3">
+                            <div class="">
+                                <p class="Portfoliotext">My<span class="Portfoliome">
+                                        Portfolio<i class="uil uil-dice-one"></i>
+                                    </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for post in allposts %}
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="category-image">
+                                    <img src="/media/{{post.image}}" alt="image" />
+                                    <div class="transparent-box">
+                                        <div class="caption">
+                                            <a _ngcontent-serverapp-c7="" class="" href="/portfolio/{{post.slug}}">
+                                                <p class="posttitle">{{post.title}}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="container my-3">
+
+                    <div _ngcontent-serverapp-c7="">
+
+                        <button _ngcontent-serverapp-c7 class="btn btn-dark float-left" disabled="">← Previous
+                        </button>
+
+                        <button _ngcontent-serverapp-c7 class="btn btn-dark float-right">Next →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

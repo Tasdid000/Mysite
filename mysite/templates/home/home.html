@@ -1,0 +1,180 @@
+{% extends 'basic.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/ca6b08760d.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static 'home.css'%}">
+
+</head>
+
+<body style="overflow-x: hidden;">
+    <div>
+        <section class="background">
+            <div class="container my-3">
+                <div class="row justify-content-start align-items-center">
+                    <div class="offset-lg-1 col-lg-5">
+                        <p class="textname">
+                            Hi, I'am Tasdid Hasnain
+                        </p>
+                        <p class="textweb">
+                            Web application development
+                        </p>
+                        <p class="myself">
+                            Hello! I am Web Developer from Bangladesh. I have rich experience in web site design and
+                            building, also I am good at wordpress. I love to talk with you about my unique.
+                        </p>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/tasdid-hasnain-2b164822a" class="home_social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://github.com/Tasdid000" class="home_social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://tasdidhasnain.showwcase.com/" class="home_social-icon">
+                                <i class="uil uil-link"></i>
+                            </a>
+                            <a href="https://tasdidhasnain.showwcase.com/" class="home_social-icon">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <a class="primary_btn" href="download/"><button class="button-23" role="button"
+                                    style="margin-right: 20px">DOWENLOAD CV</button></a>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-3">
+                        <div class="home_img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="home__blob-img" x="12" y="33" href="{% static '/img/101.png'%}" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container my-3">
+                <h1 class="about">
+                    About Me
+                </h1>
+                <p class="intro">My Introduction</p>
+                <div class="row justify-content-start align-items-center">
+                    <div class="offset-lg-1 col-lg-3">
+                        <div class="about_img">
+                            <svg class="about__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="about__blob-img" x="-50" y="" href="{% static '/img/91.png'%}" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-5">
+                        <div class="">
+                            <p class="myself">
+                                I'm Tasdid Hasanain, and I have 2 years of experience in web development, specializing
+                                in Django and React.js. I am passionate about creating efficient and user-friendly web
+                                applications that leverage the power of these frameworks. With a strong background in
+                                both backend and frontend development, I have gained expertise in building scalable
+                                server-side applications with Django and dynamic user interfaces using React.js. I am a
+                                detail-oriented problem solver who enjoys staying up-to-date with the latest
+                                technologies and industry best practices. I am eager to contribute my skills and
+                                continue growing as a developer in meaningful projects.
+                            </p>
+
+                            <div class="button">
+                                <a class="primary_btn" href="/about"><button class="button-23" role="button"
+                                        style="margin-right: 20px">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="certificate container my-3">
+                <p class="qualification">
+                    My Certificates
+                </p>
+                <div class="row">
+                    {% for post in allposts %}
+                    <div class="col-md-4">
+                        <div class="certificate">
+                            <div class="certificate-body">
+                                <div class="category-image">
+                                    <img src="/media/{{post.certificate}}" alt="certificate" class="img-fluid">
+                                    <div class="transparent-box">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+            <div class="detailss">
+                <p class="Services">
+                    Services
+                </p>
+                <div class=" row justify-content-start align-items-center">
+                    <div class=" offset-lg-1 col-lg-4">
+                        <p align="center">
+                            <i class="fa-solid fa-code"></i>
+                        </p>
+                        <p class="web">
+                            Web Development
+                        </p>
+                        <p class="webtext">
+                            Modern and mobile-ready website that will <br>help you reach all of your marketing.
+                        </p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="back">
+                            <p class="">
+                                Siam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </div>
+</body>
+
+</html>
+{% endblock body %}
